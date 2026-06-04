@@ -8,7 +8,7 @@ export default function Home() {
 
       <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-6">
         {products.map((product) => (
-          <ProductCard props= {product}  />
+          <ProductCard product= {product} key = {product.id} />
           
         ))}
       </div>
